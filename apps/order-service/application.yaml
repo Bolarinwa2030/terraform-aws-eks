@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: order-service-dev
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/Bolarinwa2030/terraform-aws-eks
+    targetRevision: main
+    path: gitops/apps/order-service/dev    # ArgoCD watches this folder
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dev
+
+  syncPolicy:
+    automated:
+      prune: true       # delete resources removed from Git
+      selfHeal: true    # revert any manual kubectl changes
+    syncOptions:
+      - CreateNamespace=true    # creates the namespace if it doesn't exist
