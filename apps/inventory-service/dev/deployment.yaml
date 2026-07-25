@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: invetory-service
-          image: 071680046254.dkr.ecr.us-east-1.amazonaws.com/inventory-service:73f0c27aac0ab69fe80ea39266801b9cb8bf244a
+          image: 071680046254.dkr.ecr.us-east-1.amazonaws.com/inventory-service:ed0d7370653a7686371dd450d314e43ef492539d
           ports:
             - containerPort: 8080
           resources:
