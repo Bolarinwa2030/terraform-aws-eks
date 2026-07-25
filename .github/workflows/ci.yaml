@@ -86,7 +86,7 @@ jobs:
       
       - name: Update image tag in GitOps repoURL
         run: |
-          git config --global user.eamil "ci@github.com"
+          git config --global user.email "ci@github.com"
           git config --global user.name "GitHub Actions"
 
           git clone https://x-access-token:${{ secrets.GITOPS_TOKEN }}@github.com/${{ github.repository_owner}}/terraform-aws-eks.git gitops-repo
