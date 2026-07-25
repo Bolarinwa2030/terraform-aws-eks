@@ -14,6 +14,8 @@ spec:
         grafana:
           enabled: true
           adminPassword: "admin123"
+          image:
+            tag: "11.3.0"
           service:
             type: ClusterIP
           persistence:
