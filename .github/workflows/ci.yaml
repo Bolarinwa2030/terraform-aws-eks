@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths-ignore:
       - 'apps/**/deployment.yaml'
-      - 'apps/**/*.yaml'
+      - 'apps/**/*.yaml'  # TO avoid looping
   pull_request:
     branches: [main]
 
