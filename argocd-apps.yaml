@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/Bolarinwa2030/terraform-aws-eks
     targetRevision: main
-    path: gitops/apps              # watches the whole apps folder
+    path: apps              # watches the whole apps folder
 
   destination:
     server: https://kubernetes.default.svc
