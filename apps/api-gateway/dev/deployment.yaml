@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: api-gateway
-          image: 071680046254.dkr.ecr.us-east-1.amazonaws.com/api-gateway:03965d9a28eae3b5216ed04c2920a76733833831
+          image: 071680046254.dkr.ecr.us-east-1.amazonaws.com/api-gateway:73f0c27aac0ab69fe80ea39266801b9cb8bf244a
           ports:
             - containerPort: 8080
           resources:
