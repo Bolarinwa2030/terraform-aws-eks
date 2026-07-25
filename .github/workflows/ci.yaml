@@ -92,7 +92,7 @@ jobs:
           git clone https://x-access-token:${{ secrets.GITOPS_TOKEN }}@github.com/${{ github.repository_owner}}/terraform-aws-eks.git gitops-repo
 
           cd gitops-repo
-          sed -i "s|image: .*${{ matrix.service }}.*|image: ${{ env.ECR_REGISTRY }}/${{ matrix.service }}:${{ github.sha }}|g" \
+          sed -i "s|image:.*|image: ${{ env.ECR_REGISTRY }}/${{ matrix.service }}:${{ github.sha }}|g" \
             apps/${{ matrix.service }}/dev/deployment.yaml
 
           git add .
