@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: order-service
-          image: 071680046254.dkr.ecr.us-east-1.amazonaws.com/order-service:7dcd89c653908bc5a08780596b2018dc2cf42f80
+          image: 071680046254.dkr.ecr.us-east-1.amazonaws.com/order-service:76e85c213286debfb3c30189d03e2a6a991dd5ef
           ports:
             - containerPort: 8080
           resources:
